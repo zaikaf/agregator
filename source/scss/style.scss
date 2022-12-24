@@ -1,0 +1,46 @@
+$font-Mulish: 'Mulish', sans-serif;
+
+$fontRegular: 400;
+$fontMedium: 500;
+$fontBold: 700;
+$fontBlack: 900;
+
+$whiteColor: #ffffff;
+$blackColor: #222222;
+
+* {
+  font-family: $font-Mulish;
+  color: $blackColor;
+}
+.hideBlock {
+  display: none;
+}
+.flexBox {
+  display: flex;
+}
+.header--title {
+  font-weight: $fontMedium;
+  font-size: 54px;
+  line-height: 60px;
+}
+.header--subtitle {
+  font-weight: $fontBold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 720px){
+
+}
+
+@media screen and (max-width: 540px){
+
+}
