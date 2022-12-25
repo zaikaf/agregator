@@ -10,10 +10,18 @@
     <link rel="stylesheet" href="css/fonts.min.css">
 </head>
 <body>
-@@include('html_parts/header.html',{})
-
-1231231231312312
-
+@@include('html_parts/main.html', {
+    title: 'Агрегатор доставки <br>для компаний и частных клиентов',
+    subtitle: 'Удобная работа с множеством служб доставки по единому договору',
+    link: 'Зарегистрироваться'
+})
+@@include('html_parts/factoid.html')
+@@include('html_parts/who.html', {
+    title: 'C кем мы работаем'
+})
+@@include('html_parts/work.html', {
+    link: 'Зарегистрироваться'
+})
 @@include('html_parts/footer.html',{})
 </body>
 </html>

@@ -9,6 +9,8 @@ import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { css } from "./gulp/tasks/css.js";
 import { scripts } from "./gulp/tasks/jscripts.js";
+import { fonts } from "./gulp/tasks/fonts.js";
+import { img } from "./gulp/tasks/img.js";
 /*imports end*/
 
 import { plugins } from "./gulp/config/plugins.js";
@@ -23,10 +25,12 @@ const watcher = () => {
     gulp.watch(path.watch.html, copy);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.css, css);
+    gulp.watch(path.watch.fonts, fonts);
+    gulp.watch(path.watch.img, img);
     gulp.watch(path.watch.js, scripts);
 };
 
-const mainTask = gulp.parallel(copy,css,scss,scripts);
+const mainTask = gulp.parallel(copy, css, scss, fonts, img, scripts);
 
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher, server));
 
