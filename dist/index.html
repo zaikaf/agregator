@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/reset.min.css?_v=20221226141442">
-    <link rel="stylesheet" href="css/fonts.min.css?_v=20221226141442">
+    <link rel="stylesheet" href="css/reset.min.css?_v=20221226225452">
+    <link rel="stylesheet" href="css/fonts.min.css?_v=20221226225452">
 </head>
 <body>
 <section class="main">
@@ -212,7 +212,10 @@
         <div class="reviews__slider">
             <div class="reviews__card flexBox">
                 <div class="reviews__card__photo flex--halfwidth">
-                    <img src="img/rew1.png" alt="rew1">
+                    <picture>
+                        <img src="img/rew1.png" alt="rew1"
+                             srcset="img/rew1x2.png 1600w">
+                    </picture>
                 </div>
                 <div class="reviews__card__content flex--halfwidth">
                     <h3 class="reviews__card__content__title">
@@ -231,10 +234,113 @@
         </div>
     </div>
 </section>
+<section class="about">
+    <div class="about__wrapper">
+        <div class="container">
+          <h2 class="about__title header--subtitle">
+            О нас
+          </h2>
+          <div class="about__box flexBox">
+            <div class="about__box__text">
+              <p class="about__box__text--info">
+                Агрегатор 2 работает на рынке логистических услуг с 2018 года. За это времени мы заключили партнёрские соглашения с 20 службами доставки, отправили 100 500 000 заказов наших клиентов.
+                <br>
+                Для нас самое главное — чтобы наши клиенты были довольны и смогли найти решения проблем с доставкой их товаров.
+              </p>
+              <p class="about__box__text--address">
+                ООО «ПОМОЩЬ ИНТЕРНЕТ-МАГАЗИНАМ» <br>
+                ИНН 7702824562 <br>
+                КПП 770501001 <br>
+                ОГРН 1137746951869
+              </p>
+              <p class="about__box__text--address">
+                адрес <br>
+                115035, Россия, г.Москва, Муниципальный округ Замоскворечье вн. тёр. г., Садовническая ул., д.14, стр.2, этаж 3, пом. I комната 1а офис 310
+              </p>
+            </div>
+            <div class="about__box__picture flexBox">
+              <picture class="about__wrapper--zIndex">
+                <img src="img/about-frs.png" alt="about"
+                     srcset="img/about-frsx2.png 1600w" class="about__picture" width="280px">
+              </picture>
+              <picture class="about__wrapper--image">
+                <img src="img/about-sec.png" alt="about"
+                     srcset="img/about-secx2.png 1600w" class="about__picture" width="272px">
+              </picture>
+            </div>
+          </div>
+          <div class="about__button flexBox">
+            <a href="#" class="link">
+              <span>Зарегистрироваться</span>
+            </a>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="quest">
+    <div class="quest__wrapper">
+        <div class="container">
+            <h2 class="quest__title header--subtitle">
+                Вопросы и ответы
+            </h2>
+            <div class="quest__box flexBox">
+                <ul class="quest__list">
+                    <li class="quest__list__item">
+                        <a href="#" class="quest__question flexBox">
+                            <span></span> Скакими курьерскими службами вы работаете?
+                        </a>
+                        <p>
+                            <span class="quest__answer">
+                                Мы работаем с крупнейшими курьерскими службами: СДЭК, КСЕ, Boxberry и др. Также у нас есть собственная служба СДТ.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="quest__list__item">
+                        <a href="#" class="quest__question flexBox">
+                            <span></span> Как отследить статус заказа?
+                        </a>
+                        <p>
+                            <span class="quest__answer">
+                                Мы работаем с крупнейшими курьерскими службами: СДЭК, КСЕ, Boxberry и др. Также у нас есть собственная служба СДТ.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="quest__list__item">
+                        <a href="#" class="quest__question flexBox">
+                            <span></span> Нужно ли подписывать договоры отдельно со службами доставки?
+                        </a>
+                        <p>
+                            <span class="quest__answer">
+                                Мы работаем с крупнейшими курьерскими службами: СДЭК, КСЕ, Boxberry и др. Также у нас есть собственная служба СДТ.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="quest__list__item">
+                        <a href="#" class="quest__question flexBox">
+                            <span></span> Кто отвечает за утерянные заказы?
+                        </a>
+                        <p>
+                            <span class="quest__answer">
+                                Мы работаем с крупнейшими курьерскими службами: СДЭК, КСЕ, Boxberry и др. Также у нас есть собственная служба СДТ. hfijsdhfisdfhsdoff sdf sdjfsdkfjbsdkfjbsdkj fbsdfjkbs dbfsdkjfbsdfjbsdkj fbjdsfbs djbfdsjbf sjdfb
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>
+            © Agregator 2
+        </p>
+    </div>
+</footer>
 <!--css-->
-<link rel="stylesheet" href="css/style.min.css?_v=20221226141442">
+<link rel="stylesheet" href="css/style.min.css?_v=20221226225452">
 <!--scripts-->
-<script src="js/main.js?_v=20221226141442" defer></script>
+<script src="js/main.js?_v=20221226225452" defer></script>
 
 </body>
 </html>

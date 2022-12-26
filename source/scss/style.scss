@@ -257,6 +257,11 @@ html, body {
     flex: 0 0 50%
   }
   .reviews__card {
+    .reviews__card__photo {
+      max-height: 520px;
+      width: 100%;
+      overflow: hidden;
+    }
     .reviews__card__content {
       padding: 32px 16px 16px;
       background: $backgroundColorBlue;
@@ -281,6 +286,131 @@ html, body {
         }
       }
     }
+  }
+}
+.about {
+  background: $backgroundColorGray;
+  padding: 64px 0;
+  .about__box {
+    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .about__box__text {
+      max-width: 504px;
+      .about__box__text--info {
+        font-size: 2rem;
+        line-height: 20px;
+        margin-bottom: 24px;
+      }
+      .about__box__text--address {
+        font-size: 1.75rem;
+        line-height: 16px;
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .about__box__picture {
+      .about__wrapper--image {
+        margin-top: 72px;
+        margin-left: -60px;
+      }
+      .about__wrapper--zIndex {
+        position: relative;
+        z-index: 9;
+      }
+    }
+  }
+  .about__button {
+    align-items: center;
+    margin-top: 48px;
+    justify-content: center;
+  }
+}
+.quest {
+  padding: 64px 0;
+  background: $backgroundColorGray;
+  .quest__box {
+    margin: 24px auto 0;
+    justify-content: center;
+    max-width: 504px;
+    .quest__list {
+      width: 100%;
+      .quest__list__item {
+        border-bottom: 1px solid #e9edea;
+        .quest__question {
+          font-family: $font-Rubik;
+          font-weight: $fontBold;
+          line-height: 20px;
+          font-size: 2rem;
+          align-items: center;
+          text-decoration: none;
+          color: $blackColor;
+          padding: 16px 8px;
+          span {
+            position: relative;
+            min-width: 24px;
+            min-height: 24px;
+            border-radius: 50%;
+            background: #818AAD;
+            margin-right: 8px;
+            &:after,
+            &:before {
+              display: block;
+              background: $whiteColor;
+              position: absolute;
+              content: '';
+              width: 14px;
+              height: 2px;
+              border-radius: 16px;
+            }
+            &:before {
+              left: 5px;
+              top: 11px;
+            }
+            &:after {
+              top: 11px;
+              left: 5px;
+              transform: rotate(90deg);
+              transition: 0.5s ease-in all;
+            }
+          }
+          &.-show {
+            &:after {
+              transform: skew(0);
+            }
+          }
+          &.-show + p {
+            max-height: 0;
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+          }
+        }
+        p {
+          transition: max-height 1s;
+          max-height: 1000px;
+          overflow: hidden;
+          .quest__answer {
+            display: block;
+            line-height: 20px;
+            font-size: 2rem;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  padding: 24px;
+  background: $backgroundColorBlue;
+  p {
+    text-align: right;
+    color: $whiteColor;
+    font-family: $font-Rubik;
+    font-weight: $fontBold;
+    font-size: 2.5rem;
+    line-height: 24px;
   }
 }
 @media screen and (max-width: 1200px){
