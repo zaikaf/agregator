@@ -377,18 +377,20 @@ html, body {
             }
           }
           &.-show {
-            &:after {
-              transform: skew(0);
+            span {
+              &:after {
+                transform: skew(0);
+              }
             }
           }
           &.-show + p {
-            max-height: 0;
-            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+            transition: max-height 1s;
+            max-height: 1000px;
           }
         }
         p {
-          transition: max-height 1s;
-          max-height: 1000px;
+          max-height: 0;
+          transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
           overflow: hidden;
           .quest__answer {
             display: block;
