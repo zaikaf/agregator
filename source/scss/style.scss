@@ -239,6 +239,50 @@ html, body {
     align-items: center;
   }
 }
+.delivery {
+  background: $backgroundColorGray;
+  padding-bottom: 34px;
+  .delivery__services {
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .delivery__services__service {
+      width: 152px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.reviews {
+  .flex--halfwidth {
+    flex: 0 0 50%
+  }
+  .reviews__card {
+    .reviews__card__content {
+      padding: 32px 16px 16px;
+      background: $backgroundColorBlue;
+      .reviews__card__content__title {
+        font-family: $font-Rubik;
+        font-weight: $fontBold;
+        font-size: 2.5rem;
+        line-height: 24px;
+        color: $whiteColor;
+      }
+      .reviews__card__content__text {
+        margin-top: 48px;
+        max-width: 504px;
+        p {
+          line-height: 24px;
+          font-size: 2.25rem;
+          margin-bottom: 26px;
+          color: $whiteColor;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1200px){
 
 }
