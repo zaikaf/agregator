@@ -242,13 +242,16 @@ html, body {
 .delivery {
   background: $backgroundColorGray;
   padding-bottom: 34px;
+  .container {
+    padding: 0 4px;
+  }
   .delivery__services {
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     .delivery__services__service {
       width: 152px;
-      margin-bottom: 30px;
+      margin: 0 12px 30px;
     }
   }
 }
@@ -415,18 +418,54 @@ html, body {
     line-height: 24px;
   }
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 8px;
+  }
+  .header--subtitle {
+    font-size: 3.25rem;
+    line-height: 30px;
+  }
+  .factoid {
+    padding: 32px 0 16px;
+    .factoid__cards {
+      justify-content: space-evenly;
+      .factoid__cards__card {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .who {
+    .who__cards {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header--title {
+    font-size: 4.5rem;
+    line-height: 36px;
+  }
+  .main {
+    background-position: center;
+    .main__title {
+      letter-spacing: 0;
+      margin-top: 0;
+    }
+    .main__subtitle {
+      font-size: 2.5rem;
+      line-height: 24px;
+      margin-top: 18px;
+    }
+  }
 
 }
 
-@media screen and (max-width: 720px){
-
-}
-
-@media screen and (max-width: 540px){
+@media screen and (max-width: 540px) {
 
 }
