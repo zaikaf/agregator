@@ -256,6 +256,18 @@ html, body {
   }
 }
 .reviews {
+  .reviews__wrapper {
+    position: relative;
+    .reviews__slider__controls {
+      position: absolute;
+      left: 51%;
+      bottom: 5px;
+      display: flex;
+      .arrow__slider {
+        cursor: pointer;
+      }
+    }
+  }
   .flex--halfwidth {
     flex: 0 0 50%
   }
@@ -420,6 +432,12 @@ html, body {
 }
 @media screen and (max-width: 1200px) {
   .reviews {
+    .reviews__wrapper {
+      .reviews__slider__controls {
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
     .reviews__card {
       flex-direction: column;
       .reviews__card__photo {
@@ -429,7 +447,7 @@ html, body {
         }
       }
       .reviews__card__content {
-        padding: 16px;
+        padding: 16px 16px 48px;
         .reviews__card__content__text {
           margin-top: 20px;
           p {
